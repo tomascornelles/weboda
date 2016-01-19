@@ -1,10 +1,8 @@
 var componer = function() {
 	if ($(window).height() > $(window).width()) {
-		$('.izq').addClass('top').removeClass('izq');
-		$('.der').addClass('bottom').removeClass('der');
+		$('.ver').addClass('hor').removeClass('ver');
 	} else {
-		$('.top').addClass('izq').removeClass('top');
-		$('.bottom').addClass('der').removeClass('bottom');
+		$('.hor').addClass('ver').removeClass('hor');
 	}
 }
 

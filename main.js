@@ -6,9 +6,18 @@ var componer = function() {
 	}
 }
 
+var siguiente = function() {
+	$('html, body').animate({
+		scrollTop: $(window).scrollTop() + $(window).height()
+	}, 500);
+}
 
 $(window).on('resize', function(){
     componer();
-  });
+});
+
+$('.siguiente').on('click', function() {
+	siguiente();
+});
 
 componer();
